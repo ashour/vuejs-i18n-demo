@@ -1,8 +1,8 @@
 import _ from 'lodash'
 import i18next from 'i18next'
 
-import { locales } from '../../config/i18n'
 import { formatDate } from './util'
+import { locales } from '../../config/i18n'
 
 export const setUiLocale = (locale) => {
     if (!_.find(locales, supported => supported.code === locale)) {
@@ -40,3 +40,5 @@ export const setUiLocale = (locale) => {
 }
 
 export const t = (key, opt) => i18next.t(key, opt)
+
+export const currentLocale = () => i18next.language

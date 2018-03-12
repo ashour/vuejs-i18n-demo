@@ -49,7 +49,10 @@
                             data-toggle="dropdown"
                             class="nav-link dropdown-toggle"
                         >
-                            Language
+                            <img
+                                class="country-icon as-toggle"
+                                :src="icons[currentLocale()]"
+                            />
                         </a>
 
                         <div
@@ -62,7 +65,8 @@
                                 :to="`/${locale.code}`"
                                 class="dropdown-item"
                             >
-                                {{locale.name}}
+                                <img :src="icons[locale.code]" class="country-icon" />
+                                <span class="locale-name">{{locale.name}}</span>
                             </router-link>
                     </div>
                 </li>
@@ -72,12 +76,23 @@
 </template>
 
 <script>
+import enIcon from 'svg-country-flags/svg/gb.svg'
+import heIcon from 'svg-country-flags/svg/il.svg'
+import jaIcon from 'svg-country-flags/svg/jp.svg'
+
 import { locales } from '../config/i18n'
+import { currentLocale } from '../services/i18n'
 
 export default {
     data() {
         return {
+            icons: {
+                en: enIcon,
+                he: heIcon,
+                ja: jaIcon,
+            },
             locales,
+            currentLocale,
         }
     },
 }
@@ -87,5 +102,23 @@ export default {
 <style scoped>
     .navbar {
         background-color: #181D26;
+    }
+
+    .country-icon {
+        width: 20px;
+        height: auto;
+        display: inline-block;
+        vertical-align: baseline;
+        border: 1px solid #dee2e6;
+        box-shadow: 0px 1px 3px rgba(24, 29, 38, 0.1);
+    }
+
+    .country-icon.as-toggle {
+        margin-top: 5px;
+    }
+
+    .locale-name {
+        display: inline-block;
+        vertical-align: baseline;
     }
 </style>

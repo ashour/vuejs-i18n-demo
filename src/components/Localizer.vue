@@ -6,8 +6,11 @@
 
 <script>
 import Vue from 'vue'
+import _ from 'lodash'
 
+import { locales } from '../config/i18n'
 import { setUiLocale, t } from '../services/i18n'
+import { switchHtmlLocale } from '../services/i18n/util'
 
 export default {
     name: 'Localizer',
@@ -30,6 +33,19 @@ export default {
                     this.cachedLocale = locale
 
                     this.uiTranslationsLoaded = true
+
+                    const dir = _.find(locales, l => l.code === locale).dir
+
+                    switchHtmlLocale(
+                        locale,
+                        dir,
+                        {
+                            withRTL: [
+                                '/static/styles/vendor/GhalamborM/bootstrap4-rtl.css',
+                                '/static/styles/rtl.css',
+                            ],
+                        },
+                    )
                 })
                 /* eslint-disable no-console */
                 .catch(err => console.error(err))
