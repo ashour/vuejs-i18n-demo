@@ -1,0 +1,17 @@
+{
+    "translation": {
+        "app_name": "Gawa",
+        "products": "Products",
+        "about": "About",
+        "welcome": "Welcome to Gawa!",
+        "lead": "This is a demo app showcasing how a Vue.js SPA can be built with I18n and l10n. Use the language switcher in the menu to see this page in <a href=\"/#/en\">English</a>, <a href=\"/#/ja\">Japanese</a>, and <a href=\"/#/he\">Hebrew</a>. After you select a language, checkout the <a href=\"{{product_url}}\">Product</a> and <a href=\"{{about_url}}\">About</a> pages.",
+        "trans_disclaimer": "I used Google translate to generate the Japanese and Hebrew. Sorry if either is a total wash!",
+        "purpose": "This app was written as a companion for a <a href=\"{{article_url}}\">PhraseApp blog post</a> and is released under the <a href=\"{{license_url}}\">MIT license</a>.",
+        "links": "Links You May Fancy",
+        "app_repo": "This app's code on Github",
+        "blog_article": "This PhraseApp blog article associated with this app",
+        "vue_site": "The Vue.js website",
+        "retromancave": "RetroManCave's Restoration: Atari Lynx Tear Down - Trash to Treasure Pt1 on YouTube",
+        "author_credit": "Created March 2018 by <a href=\"https://ashour.ca\">{{name}}</a>"
+    }
+}
