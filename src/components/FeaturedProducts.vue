@@ -18,7 +18,7 @@ import ProductCard from './ProductCard'
 export default {
     data() {
         return {
-            products: []
+            products: [],
         }
     },
 
@@ -31,7 +31,7 @@ export default {
     },
 
     components: {
-        ProductCard
+        ProductCard,
     },
 }
 </script>
