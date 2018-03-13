@@ -106,7 +106,7 @@ export default {
 
     components: {
         LocalizedLink,
-    }
+    },
 }
 </script>
 

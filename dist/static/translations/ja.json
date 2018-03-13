@@ -12,6 +12,11 @@
         "blog_article": "このPhraseAppブログ記事はこのアプリに関連付けられています",
         "vue_site": "Vue.jsのウェブサイト",
         "retromancave": "RetroManCaveの復活：Atari Lynxティアダウン - ゴミ箱へゴミ箱へ",
-        "author_credit": "<a href=\"https://ashour.ca\">{{name}}</a>によって2018年3月に作成されました"
+        "author_credit": "<a href=\"https://ashour.ca\">{{name}}</a>によって2018年3月に作成されました",
+        "our_products": "当社の製品",
+        "product_index_lead": "改装されたレトロ、私たちのワークショップの直後💌",
+        "view_product_details": "製品の詳細を表示",
+        "added_on": "{{date, year:numeric;month:long}}に追加されました",
+        "product_price": "{{price, style:currency;currency:JPY}}"
     }
 }

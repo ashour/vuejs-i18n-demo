@@ -19,7 +19,7 @@ export default {
         headerBorder: {
             type: Boolean,
             default: true,
-        }
+        },
     },
 }
 </script>
@@ -40,5 +40,3 @@ export default {
         transform: translate(-50%, -50%);
     }
 </style>
-
-

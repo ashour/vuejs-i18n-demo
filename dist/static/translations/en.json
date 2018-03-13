@@ -12,6 +12,11 @@
         "blog_article": "This PhraseApp blog article associated with this app",
         "vue_site": "The Vue.js website",
         "retromancave": "RetroManCave's Restoration: Atari Lynx Tear Down - Trash to Treasure Pt1 on YouTube",
-        "author_credit": "Created March 2018 by <a href=\"https://ashour.ca\">{{name}}</a>"
+        "author_credit": "Created March 2018 by <a href=\"https://ashour.ca\">{{name}}</a>",
+        "view_product_details": "View product details",
+        "our_products": "Our Products",
+        "product_index_lead": "Refurbished Retro, right from our workshop 💌",
+        "added_on": "Added in {{date, year:numeric;month:long}}",
+        "product_price": "{{price, style:currency;currency:USD}}"
     }
 }

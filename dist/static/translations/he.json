@@ -12,6 +12,11 @@
         "blog_article": "זה מאמר PhraseApp בלוג המשויך עם יישום זה",
         "vue_site": "אתר Vue.js",
         "retromancave": "שחזור של RetroManCave: Atari Lynx להרוס - זבל לאוצר חלק 1 ב- YouTube",
-        "author_credit": "נוצר במרץ 2018 על ידי <a href=\"https://ashour.ca\">{{name}}</a>"
+        "author_credit": "נוצר במרץ 2018 על ידי <a href=\"https://ashour.ca\">{{name}}</a>",
+        "our_products": "המוצרים שלנו",
+        "product_index_lead": "משופץ רטרו, ממש מן הסדנה שלנו  💌",
+        "view_product_details": "הצג את פרטי המוצר",
+        "added_on": "נוסף ב {{date, year:numeric;month:long}}",
+        "product_price": "{{price, style:currency;currency:ILS}}"
     }
 }
