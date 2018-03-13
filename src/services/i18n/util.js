@@ -15,16 +15,31 @@ export function switchHtmlLocale(locale, dir, opt = {}) {
     }
 }
 
-export function formatDate(value, format, locale) {
-    // we transform "foo:bar;baz:man" into { foo: bar, baz: man }
+function parseOptions(format) {
     const options = {}
+
     format.split(';').forEach((part) => {
         const [key, val] = part.split(':')
         options[key.trim()] = val.trim()
     })
 
+    return options
+}
+
+export function formatDate(value, format, locale) {
     try {
-        return new Intl.DateTimeFormat(locale, options).format(value)
+        return new Intl.DateTimeFormat(locale, parseOptions(format)).format(value)
+    } catch (err) {
+        /* eslint-disable no-console */
+        console.error(err)
+    }
+
+    return value
+}
+
+export function formatPrice(value, format, locale) {
+    try {
+        return new Intl.NumberFormat(locale, parseOptions(format)).format(value)
     } catch (err) {
         /* eslint-disable no-console */
         console.error(err)

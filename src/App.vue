@@ -1,6 +1,6 @@
 <template>
     <div id="app" class="app-wrapper">
-        <Localizer>
+        <localizer>
             <header>
                 <navbar />
             </header>
@@ -8,7 +8,7 @@
             <main class="container" role="main">
                 <router-view/>
             </main>
-        </Localizer>
+        </localizer>
     </div>
 </template>
 

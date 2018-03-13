@@ -1,8 +1,8 @@
 import _ from 'lodash'
 import i18next from 'i18next'
 
-import { formatDate } from './util'
 import { locales } from '../../config/i18n'
+import { formatDate, formatPrice } from './util'
 
 export const setUiLocale = (locale) => {
     if (!_.find(locales, supported => supported.code === locale)) {
@@ -21,6 +21,10 @@ export const setUiLocale = (locale) => {
                         format(value, format, _locale) {
                             if (value instanceof Date) {
                                 return formatDate(value, format, _locale)
+                            }
+
+                            if (_.startsWith(format, 'style:currency')) {
+                                return formatPrice(value, format, _locale)
                             }
 
                             return value

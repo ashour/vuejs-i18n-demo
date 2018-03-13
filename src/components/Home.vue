@@ -1,6 +1,6 @@
 <template>
-    <div>
-        <h1 class="border-bottom pb-3 mb-3">{{$t('welcome')}}</h1>
+    <page>
+        <template slot="header">{{$t('welcome')}}</template>
 
         <div class="row">
             <div class="col">
@@ -44,5 +44,15 @@
             class="small text-center mt-3 text-muted"
             v-html="$t('author_credit', { name: 'Mohammad Ashour' })"
         />
-    </div>
+    </page>
 </template>
+
+<script>
+import Page from './Page'
+
+export default {
+    components: {
+        Page,
+    },
+}
+</script>
