@@ -1,0 +1,14 @@
+[dir="rtl"] .mr-auto {
+    margin-right: 0 !important;
+    margin-left: auto !important;
+}
+
+[dir="rtl"] .ml-auto {
+    margin-left: 0 !important;
+    margin-right: auto !important;
+}
+
+[dir="rtl"] .navbar-expand-md .navbar-nav .dropdown-menu-right {
+    right: auto;
+    left: 0;
+}

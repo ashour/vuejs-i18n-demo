@@ -1,0 +1,17 @@
+{
+    "translation": {
+        "app_name": "ガワ",
+        "products": "製品",
+        "about": "約",
+        "welcome": "ガワへようこそ！",
+        "lead": "これは、Vue.js SPAがI18nとI10nでどのように構築できるかを示すデモアプリケーションです。このページを英語、日本語、ヘブライ語で表示するには、メニューの言語切り替えを使用します。言語を選択したら、<a href=\"{{product_url}}\">製品</a> と <a href=\"{{about_url}}\">私たちの物語</a> ページをチェックアウトします。",
+        "trans_disclaimer": "私はGoogle翻訳を使って日本語とヘブライ語を生成しました。 申し訳ありませんが、いずれかの場合は、悪い翻訳です！",
+        "purpose": "このアプリは* <a href=\"{{article_url}}\">PhraseAppブログの投稿</a> *のコンパニオンとして書かれており、その下にリリースされています。<a href=\"{{license_url}}\">MITライセンス</a>",
+        "links": "好きなリンク",
+        "app_repo": "このアプリのコードはGithubにあります",
+        "blog_article": "このPhraseAppブログ記事はこのアプリに関連付けられています",
+        "vue_site": "Vue.jsのウェブサイト",
+        "retromancave": "RetroManCaveの復活：Atari Lynxティアダウン - ゴミ箱へゴミ箱へ",
+        "author_credit": "<a href=\"https://ashour.ca\">{{name}}</a>によって2018年3月に作成されました"
+    }
+}
