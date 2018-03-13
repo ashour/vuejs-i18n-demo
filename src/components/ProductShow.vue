@@ -1,13 +1,13 @@
 <template>
     <page v-if="product">
         <template slot="header">
-            <span class="d-flex justify-content-between align-items-baseline">
+            <h1 class="d-flex justify-content-between align-items-baseline">
                 <span>{{product.title}}</span>
 
                 <span class="added-on text-muted">
                     {{$t('added_on', { date: new Date(product.added_on) })}}
                 </span>
-            </span>
+            </h1>
         </template>
 
         <div class="row">

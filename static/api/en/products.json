@@ -6,7 +6,8 @@
         "price": 78.99,
         "currency": "$",
         "image_uri": "sega-saturn.png",
-        "added_on": "2018-03-13"
+        "added_on": "2018-03-13",
+        "featured": true
     },
     {
         "id": 2,
@@ -15,7 +16,8 @@
         "price": 139.99,
         "currency": "$",
         "image_uri": "virtual-boy.jpg",
-        "added_on": "2018-03-13"
+        "added_on": "2018-03-13",
+        "featured": true
     },
     {
         "id": 3,
@@ -24,7 +26,8 @@
         "price": 159.99,
         "currency": "$",
         "image_uri": "c-64.jpg",
-        "added_on": "2018-03-13"
+        "added_on": "2018-03-13",
+        "featured": true
     },
     {
         "id": 4,

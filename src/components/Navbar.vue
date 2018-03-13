@@ -36,16 +36,19 @@
                     </a>
                 </localized-link>
 
-                <li class="nav-item">
-                    <a class="nav-link" href="#">{{$t('about')}}</a>
-                </li>
+                <localized-link
+                    tag="li"
+                    to="about"
+                    class="nav-item"
+                    active-class="active"
+                >
+                    <a class="nav-link">
+                        {{$t('about')}}
+                    </a>
+                </localized-link>
             </ul>
 
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Bag</a>
-                </li>
-
                 <li class="nav-item dropdown">
                     <a
                         href="#"

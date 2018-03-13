@@ -1,41 +1,43 @@
 <template>
-    <page :header-border="false">
-        <template slot="header">
-            <h1>{{$t('our_products')}}</h1>
-        </template>
+    <div class="featured-products">
+        <h2 class="h3">{{$t('featured')}}</h2>
 
-        <p class="lead">{{$t('product_index_lead')}}</p>
-
-        <div class="card-columns mb-4">
+        <div class="card-deck">
             <product-card
                 v-for="product in products"
                 :key="product.id"
                 :product="product"
             />
         </div>
-    </page>
+    </div>
 </template>
 
 <script>
-import Page from './Page'
 import ProductCard from './ProductCard'
 
 export default {
     data() {
         return {
-            products: [],
+            products: []
         }
     },
 
     mounted() {
         fetch(`/static/api/${this.$route.params.locale}/products.json`)
             .then(response => response.json())
-            .then((products) => { this.products = products })
+            .then((products) => {
+                this.products = products.filter(p => p.featured)
+            })
     },
 
     components: {
-        Page,
-        ProductCard,
+        ProductCard
     },
 }
 </script>
+
+<style scoped>
+    .featured-products {
+        margin-bottom: 40px;
+    }
+</style>

@@ -1,58 +1,57 @@
 <template>
-    <page>
-        <template slot="header">{{$t('welcome')}}</template>
+    <page :header-border="false">
+        <template slot="header" class="mt-4">
+            <h1 class="text-center display-1">
+                {{$t('app_name')}}
 
-        <div class="row">
-            <div class="col">
-                <p class="lead" v-html="$t('lead')" />
+                <span class="slogan">
+                    <span>{{$t('slogan')}}</span>
+                </span>
+            </h1>
+        </template>
 
-                <p class="small text-muted">
-                    {{$t('trans_disclaimer')}}
-                </p>
+        <featured-products />
 
-                <p v-html="$t('purpose')" />
-            </div>
+        <separator />
 
-            <div class="col">
-                <h2 class="mb-3 h5 lead">{{$t('links')}}</h2>
-
-                <ul class="list-group list-group-flush">
-                    <li class="list-group-item">
-                        <a href="#">{{$t('app_repo')}}</a>
-                    </li>
-
-                    <li class="list-group-item">
-                        <a href="#">{{$t('blog_article')}}</a>
-                    </li>
-
-                    <li class="list-group-item">
-                        <a href="https://vuejs.org/">{{$t('vue_site')}}</a>
-                    </li>
-
-                    <li class="list-group-item">
-                        <a href="https://www.youtube.com/watch?v=mWhTvyN0cIM">
-                            {{$t('retromancave')}}
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-
-        <hr class="mt-4">
-
-        <p
-            class="small text-center mt-3 text-muted"
-            v-html="$t('author_credit', { name: 'Mohammad Ashour' })"
-        />
+        <info />
     </page>
 </template>
 
 <script>
+import Info from './Info'
 import Page from './Page'
+import Separator from './Separator'
+import FeaturedProducts from './FeaturedProducts'
 
 export default {
     components: {
+        Info,
         Page,
+        Separator,
+        FeaturedProducts,
     },
 }
 </script>
+
+<style scoped>
+    .slogan {
+        display: block;
+        font-size: 18px;
+        font-weight: 100;
+        margin-top: 20px;
+        position: relative;
+        border-bottom: 1px solid rgba(0,0,0,.125);
+    }
+
+    .slogan span {
+        left: 50%;
+        top: -50%;
+        padding: 10px;
+        display: block;
+        position: absolute;
+        background-color: #fff;
+        transform: translate(-50%, -50%);
+    }
+</style>
+
