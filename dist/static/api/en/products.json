@@ -4,7 +4,6 @@
         "title": "Sega Saturn",
         "description": "A vintage game collector's dream, the Sega Saturn, and its library of rare gems, is much sought after. This particular unit was handed to us with bloated capacitors, so of course we recapped it. Other than that, it works like a charm.",
         "price": 78.99,
-        "currency": "$",
         "image_uri": "sega-saturn.png",
         "added_on": "2018-03-13",
         "featured": true
@@ -14,7 +13,6 @@
         "title": "Nintendo Virtual Boy",
         "description": "It's rare to see a Virtual Boy in the wild these days. Nintendo's ill-fated console has a very interesting history, and is a good addition to any video game collection. We got this one with a bad power supply, which we replaced. It works like new now.",
         "price": 139.99,
-        "currency": "$",
         "image_uri": "virtual-boy.jpg",
         "added_on": "2018-03-13",
         "featured": true
@@ -24,7 +22,6 @@
         "title": "Commodore 64",
         "description": "Who doesn't remember the Commodore 64? Well, other than them millennials. Amiga's flagship is one of the most celebrated computers and gaming platforms. All this unit needed was some recapping and retro-briting to get its case's colour looking like new. Now it's sure to look good and work well for years to come.",
         "price": 159.99,
-        "currency": "$",
         "image_uri": "c-64.jpg",
         "added_on": "2018-03-13",
         "featured": true
@@ -34,7 +31,6 @@
         "title": "Nintendo Game Boy Pocket",
         "description": "Nintendo's iconic Game Boy needs no introduction to any child of the 80's. We grew up spending many delightful hours glued to the Game Boy's green and black screen. The later-released Game Boy Pocket is a lot easier to look at, since it features a black and white screen instead. And it plays all original Game Boy games. This unit was sold to us in near-perfect condition, and includes the original power adapter.",
         "price": 49.99,
-        "currency": "$",
         "image_uri": "game-boy-pocket.jpg",
         "added_on": "2018-03-13"
     },
@@ -43,7 +39,6 @@
         "title": "Nintendo Gamecube + Game Boy Player",
         "description": "It may be easy enough for a collector to find Nintendo's little Gamecube, but it is certainly quite rare to find the console's Game Boy Player add-on. The attachment allows you to play Game Boy, Game Boy Color, and Game Boy Advanced games on a TV. Need we say more? This combo unit was donated by a family member, is in great condition, and includes the necessary Game Boy Player software.",
         "price": 89.99,
-        "currency": "$",
         "image_uri": "gamecube-game-boy-player.jpg",
         "added_on": "2018-03-13"
     },
@@ -52,7 +47,6 @@
         "title": "Sinclair ZX Spectrum",
         "description": "A personal favourite of ours, the ZX Spectrum was more known in Europe than the rest of the world. Still, we loved playing gems like Batman and Commando, in all of the ZX's 15 available output colours. We found this unit at a retro gaming convention. It needed a new power supply, and luckily we had an extra one laying around. It works perfectly now.",
         "price": 99.99,
-        "currency": "$",
         "image_uri": "sinclair-zx-spectrum.jpg",
         "added_on": "2018-03-13"
     }
