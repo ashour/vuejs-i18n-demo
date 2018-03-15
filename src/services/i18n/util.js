@@ -1,6 +1,6 @@
 import { loadAsset, removeAsset } from '../util'
 
-export function switchHtmlLocale(locale, dir, opt = {}) {
+export function switchDocumentLocale(locale, dir, opt = {}) {
     const html = window.document.documentElement
 
     html.lang = locale

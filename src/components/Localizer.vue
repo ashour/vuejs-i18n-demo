@@ -9,34 +9,29 @@ import Vue from 'vue'
 import _ from 'lodash'
 
 import { locales } from '../config/i18n'
-import { setUiLocale, t } from '../services/i18n'
-import { switchHtmlLocale } from '../services/i18n/util'
+import { switchDocumentLocale } from '../services/i18n/util'
+import { setUiLocale, t, currentLocale } from '../services/i18n'
 
 export default {
-    name: 'Localizer',
-
     data() {
         return {
-            cachedLocale: '',
             uiTranslationsLoaded: false,
         }
     },
 
     methods: {
-        setLocale(locale) {
+        set(locale) {
             this.uiTranslationsLoaded = false
 
             setUiLocale(locale)
                 .then(() => {
                     Vue.prototype.$t = t
 
-                    this.cachedLocale = locale
-
                     this.uiTranslationsLoaded = true
 
                     const dir = _.find(locales, l => l.code === locale).dir
 
-                    switchHtmlLocale(
+                    switchDocumentLocale(
                         locale,
                         dir,
                         {
@@ -53,17 +48,16 @@ export default {
     },
 
     mounted() {
-        this.setLocale(this.$route.params.locale)
+        this.set(this.$route.params.locale)
     },
 
     watch: {
         /* eslint-disable object-shorthand */
         '$route'(to) {
-            if (to.params.locale !== this.cachedLocale) {
-                this.setLocale(to.params.locale)
+            if (to.params.locale !== currentLocale()) {
+                this.set(to.params.locale)
             }
         },
     },
 }
 </script>
-

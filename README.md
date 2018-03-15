@@ -1,21 +1,27 @@
 # gawa
 
-> A Vue.js I18n demo
+> A Vue.js I18n demo app created as a companion to a [PhraseApp blog post](https://phraseapp.com/blog/posts/build-an-spa-with-i18n-in-vue-js/).
 
 ## Build Setup
 
 ``` bash
 # install dependencies
 npm install
+# or
+yarn
 
 # serve with hot reload at localhost:8080
 npm run dev
+# or
+yarn dev
 
 # build for production with minification
 npm run build
+# or
+yarn build
 
 # build for production and view the bundle analyzer report
 npm run build --report
 ```
 
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+This project was bootstrapped with [the Vue.js CLI](https://vuejs.org/v2/guide/installation.html#CLI).

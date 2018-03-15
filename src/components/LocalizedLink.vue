@@ -1,7 +1,7 @@
 <template>
     <router-link
         :tag="tag"
-        :to="url()"
+        :to="uri()"
         :active-class="activeClass"
     >
         <slot />
@@ -17,7 +17,7 @@ export default {
     ],
 
     methods: {
-        url() {
+        uri() {
             const locale = this.$route.params.locale
 
             if (this.to === '/') return `/${locale}`

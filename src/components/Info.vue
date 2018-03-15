@@ -8,7 +8,10 @@
                     {{$t('trans_disclaimer')}}
                 </p>
 
-                <p v-html="$t('purpose')" />
+                <p v-html="$t('purpose', {
+                    article_url: 'https://phraseapp.com/blog/posts/build-an-spa-with-i18n-in-vue-js/',
+                    license_url: 'https://github.com/ashour/vuejs-i18n-demo/blob/master/LICENSE',
+                })" />
             </div>
 
             <div class="col">
@@ -16,11 +19,15 @@
 
                 <ul class="list-group list-group-flush">
                     <li class="list-group-item">
-                        <a href="#">{{$t('app_repo')}}</a>
+                        <a href="https://github.com/ashour/vuejs-i18n-demo">
+                            {{$t('app_repo')}}
+                        </a>
                     </li>
 
                     <li class="list-group-item">
-                        <a href="#">{{$t('blog_article')}}</a>
+                        <a href="https://phraseapp.com/blog/posts/build-an-spa-with-i18n-in-vue-js/">
+                            {{$t('blog_article')}}
+                        </a>
                     </li>
 
                     <li class="list-group-item">

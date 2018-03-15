@@ -1,12 +1,12 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 
-import Home from '@/components/Home'
-import About from '@/components/About'
-import ProductShow from '@/components/ProductShow'
-import ProductIndex from '@/components/ProductIndex'
+import Home from '../components/Home'
+import About from '../components/About'
+import ProductShow from '../components/ProductShow'
+import ProductIndex from '../components/ProductIndex'
 
-import { defaultLocale } from '@/config/i18n'
+import { defaultLocale } from '../config/i18n'
 
 Vue.use(Router)
 
