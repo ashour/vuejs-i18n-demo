@@ -1,9 +1,7 @@
 <template>
     <div id="app" class="app-wrapper">
         <localizer>
-            <header>
-                <navbar />
-            </header>
+            <navbar />
 
             <main class="container" role="main">
                 <router-view/>
