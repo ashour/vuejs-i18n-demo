@@ -1,6 +1,6 @@
 # gawa
 
-> A Vue.js I18n demo app created as a companion to a [PhraseApp blog post](https://phraseapp.com/blog/posts/build-an-spa-with-i18n-in-vue-js/).
+> A Vue.js I18n demo app created as a companion to a [PhraseApp blog post](https://phraseapp.com/blog/posts/how-to-build-spa-vue-js-i18n/).
 
 ## Build Setup
 

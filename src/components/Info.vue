@@ -9,7 +9,7 @@
                 </p>
 
                 <p v-html="$t('purpose', {
-                    article_url: 'https://phraseapp.com/blog/posts/build-an-spa-with-i18n-in-vue-js/',
+                    article_url: 'https://phraseapp.com/blog/posts/how-to-build-spa-vue-js-i18n/',
                     license_url: 'https://github.com/ashour/vuejs-i18n-demo/blob/master/LICENSE',
                 })" />
             </div>
@@ -25,7 +25,7 @@
                     </li>
 
                     <li class="list-group-item">
-                        <a href="https://phraseapp.com/blog/posts/build-an-spa-with-i18n-in-vue-js/">
+                        <a href="https://phraseapp.com/blog/posts/how-to-build-spa-vue-js-i18n/">
                             {{$t('blog_article')}}
                         </a>
                     </li>
