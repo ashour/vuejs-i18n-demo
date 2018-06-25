@@ -39,6 +39,7 @@ import heIcon from 'svg-country-flags/svg/il.svg'
 import jaIcon from 'svg-country-flags/svg/jp.svg'
 
 import { locales } from '../config/i18n'
+import { currentLocale as i18nCurrentLocale } from '../services/i18n'
 
 export default {
     data() {
@@ -54,7 +55,7 @@ export default {
 
     computed: {
         currentLocale() {
-            return this.$route.params.locale
+            return i18nCurrentLocale()
         },
     },
 }

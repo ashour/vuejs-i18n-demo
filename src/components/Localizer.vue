@@ -8,7 +8,7 @@
 import Vue from 'vue'
 import _ from 'lodash'
 
-import { locales } from '../config/i18n'
+import { locales, defaultLocale } from '../config/i18n'
 import { switchDocumentLocale } from '../services/i18n/util'
 import { setUiLocale, t, currentLocale } from '../services/i18n'
 
@@ -20,7 +20,7 @@ export default {
     },
 
     methods: {
-        set(locale) {
+        set(locale = defaultLocale) {
             this.uiTranslationsLoaded = false
 
             setUiLocale(locale)

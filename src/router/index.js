@@ -6,12 +6,18 @@ import About from '../components/About'
 import ProductShow from '../components/ProductShow'
 import ProductIndex from '../components/ProductIndex'
 
+import NotLocalized from '../components/NotLocalized'
+
 import { defaultLocale } from '../config/i18n'
 
 Vue.use(Router)
 
 export default new Router({
     routes: [
+        {
+            path: '/auth',
+            component: NotLocalized,
+        },
         {
             path: '/',
             redirect: `/${defaultLocale}`,
