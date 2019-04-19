@@ -41,9 +41,9 @@ export function removeAsset(fileName, fileType) {
 
     // we search backwards within nodelist for matching elements to remove
     for (let i = suspects.length; i >= 0; i -= 1) {
-        if (suspects[i] &&
-            suspects[i].getAttribute(attribute) !== null &&
-            suspects[i].getAttribute(attribute).indexOf(fileName) !== -1) {
+        if (suspects[i]
+            && suspects[i].getAttribute(attribute) !== null
+            && suspects[i].getAttribute(attribute).indexOf(fileName) !== -1) {
             suspects[i].parentNode.removeChild(suspects[i])
         }
     }

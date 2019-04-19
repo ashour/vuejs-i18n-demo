@@ -6,7 +6,7 @@ import { formatDate, formatPrice } from './util'
 
 export const setUiLocale = (locale) => {
     if (!_.find(locales, supported => supported.code === locale)) {
-        return Promise.reject(`Locale ${locale} is not supported.`)
+        return Promise.reject(new Error(`Locale ${locale} is not supported.`))
     }
 
     return fetch(`/static/translations/${locale}.json`)
