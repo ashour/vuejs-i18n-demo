@@ -18,7 +18,7 @@ export default {
 
     methods: {
         uri() {
-            const locale = this.$route.params.locale
+            const { locale } = this.$route.params
 
             if (this.to === '/') return `/${locale}`
 

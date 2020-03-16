@@ -29,7 +29,7 @@ export default {
 
                     this.uiTranslationsLoaded = true
 
-                    const dir = _.find(locales, l => l.code === locale).dir
+                    const { dir } = _.find(locales, l => l.code === locale)
 
                     switchDocumentLocale(
                         locale,
