@@ -1,3 +1,7 @@
+**⚠️ This repo is no longer maintained! Please visit https://github.com/PhraseApp-Blog/vuejs-i18n-demo for the up-to-date repo.**
+
+---
+
 # gawa
 
 > A Vue.js I18n demo app created as a companion to a [PhraseApp blog post](https://phraseapp.com/blog/posts/how-to-build-spa-vue-js-i18n/).
